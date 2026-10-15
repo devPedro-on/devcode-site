@@ -49,7 +49,7 @@
     color:transparent;
   }
 
-  /* ===== HEXAGON DECOR ===== */
+  /* HEXAGON DECOR */
   .hex{
     position:absolute;
     border:1px solid rgba(59,130,246,0.35);
@@ -58,7 +58,7 @@
     pointer-events:none;
   }
 
-  /* ===== NAV ===== */
+  /* NAV */
   header{
     position:fixed;top:0;left:0;right:0;
     z-index:100;
@@ -127,7 +127,7 @@
   @media(min-width:960px){ .nav-cta{display:inline-flex;} }
   @media(max-width:960px){ .nav-links{display:none;} }
 
-  /* ===== HERO ===== */
+  /* HERO */
   .hero{
     position:relative;
     padding:168px 0 90px;
@@ -177,7 +177,7 @@
   }
   .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
 
-  /* ===== TICKER ===== */
+  /* TICKER */
   .ticker-wrap{
     position:relative;
     border-top:1px solid var(--panel-border);
@@ -204,7 +204,7 @@
     to{transform:translateX(-50%);}
   }
 
-  /* ===== SECTION SHARED ===== */
+  /* SECTION SHARED */
   section.block{
     position:relative;
     padding:120px 0;
@@ -218,7 +218,7 @@
   }
   .section-head p{color:var(--text-1);font-size:16px;max-width:520px;}
 
-  /* ===== SERVICES ===== */
+  /* SERVICES */
   .services-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -249,7 +249,7 @@
     font-family:var(--mono);font-size:12px;color:var(--text-2);
   }
 
-  /* ===== PROJECTS ===== */
+  /* PROJECTS */
   .projects-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -314,7 +314,7 @@
   .project-body h3{font-size:17px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
   .project-body p{font-size:14px;color:var(--text-1);}
 
-  /* ===== PROCESS ===== */
+  /* PROCESS */
   .process-list{border-top:1px solid var(--panel-border);}
   .process-item{
     display:grid;
@@ -332,7 +332,7 @@
   .process-item h3{font-size:19px;font-weight:600;margin-bottom:8px;}
   .process-item p{color:var(--text-1);font-size:14.5px;max-width:520px;}
 
-  /* ===== CTA ===== */
+  /* CTA */
   .cta-block{
     position:relative;
     border-radius:20px;
@@ -351,7 +351,7 @@
   .cta-block h2{font-size:clamp(24px,3.4vw,32px);font-weight:700;margin-bottom:12px;max-width:520px;}
   .cta-block p{color:var(--text-1);font-size:15px;max-width:440px;}
 
-  /* ===== FOOTER ===== */
+  /* FOOTER */
   footer{
     border-top:1px solid var(--panel-border);
     padding:70px 0 30px;
