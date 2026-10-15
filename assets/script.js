@@ -1,5 +1,5 @@
 
-/* ===================== CONSTELLATION ANIMATION ===================== */
+/* CONSTELLATION ANIMATION */
 (function(){
   const canvas = document.getElementById('constellation');
   const ctx = canvas.getContext('2d');
