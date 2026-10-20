@@ -350,6 +350,7 @@
   }
   .cta-block h2{font-size:clamp(24px,3.4vw,32px);font-weight:700;margin-bottom:12px;max-width:520px;}
   .cta-block p{color:var(--text-1);font-size:15px;max-width:440px;}
+  .catalog-cta{margin-top:48px;}
 
   /* FOOTER */
   footer{
