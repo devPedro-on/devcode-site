@@ -30,8 +30,8 @@
       stars.push({
         x: Math.random()*w,
         y: Math.random()*h,
-        vx: (Math.random()-0.5)*0.18,
-        vy: (Math.random()-0.5)*0.18,
+        vx: (Math.random()-0.5)*0.3,
+        vy: (Math.random()-0.5)*0.3,
         r: Math.random()*1.4 + 0.6,
         tw: Math.random()*Math.PI*2,
         twSpeed: 0.01 + Math.random()*0.02
