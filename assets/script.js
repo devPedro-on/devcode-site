@@ -119,3 +119,20 @@
     function step_once(){ ctx.clearRect(0,0,w,h); for(let s of stars){ ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fillStyle='rgba(210,230,255,0.7)'; ctx.fill(); } }
   }
 })();
+
+/* MENU DO CELULAR */
+(function(){
+  const header = document.querySelector('header');
+  const toggle = header && header.querySelector('.nav-toggle');
+  if(!toggle) return;
+  function setOpen(open){
+    header.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  }
+  toggle.addEventListener('click', function(){ setOpen(!header.classList.contains('menu-open')); });
+  header.querySelectorAll('.nav-links a').forEach(function(a){ a.addEventListener('click', function(){ setOpen(false); }); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setOpen(false); });
+  document.addEventListener('click', function(e){ if(!header.contains(e.target)) setOpen(false); });
+  window.addEventListener('resize', function(){ if(window.innerWidth >= 960) setOpen(false); });
+})();
