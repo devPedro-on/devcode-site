@@ -15,7 +15,7 @@
     --sans: 'Space Grotesk', sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth; scroll-padding-top:96px;}
   body{
     background:var(--bg-0);
     color:var(--text-0);
@@ -76,14 +76,14 @@
     font-weight:700;font-size:16px;letter-spacing:0.02em;
   }
   .logo-mark{
-    height:32px;width:auto;
+    height:32px;width:auto;flex-shrink:0;
     position:relative;
     display:flex;align-items:center;justify-content:center;
   }
-  .logo-mark img{height:100%;width:auto;display:block;}
+  .logo-mark img{height:100%;width:auto;display:block;object-fit:contain;}
   .logo-tag{
     font-family:var(--mono);
-    font-size:9px;letter-spacing:0.15em;
+    font-size:10.5px;letter-spacing:0.15em;
     color:var(--text-2);
     text-transform:uppercase;
     border-left:1px solid var(--panel-border);
